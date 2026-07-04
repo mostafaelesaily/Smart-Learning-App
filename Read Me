@@ -1,0 +1,34 @@
+# Before Running the Project
+
+Please complete the following steps before running the application:
+
+1. Restore all required NuGet packages:
+
+   ```bash
+   dotnet restore
+   ```
+
+2. Configure the `appsettings.json` file:
+
+   * Set your database connection string.
+   * Add your JWT settings:
+
+     * `Key`
+     * `Issuer`
+     * `Audience`
+   * Add your AI API key.
+   * Specify the AI model name you want to use.
+
+3. Apply the database migrations:
+
+   ```bash
+   dotnet ef database update
+   ```
+
+4. Run the application:
+
+   ```bash
+   dotnet run
+   ```
+
+> **Note:** Sensitive information such as API keys, JWT secrets, and connection strings is not included in this repository. You must provide your own configuration before running the project.
